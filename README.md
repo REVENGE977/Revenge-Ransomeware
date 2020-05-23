@@ -46,4 +46,7 @@ const listener = app.listen(3000, () => {
 
 
 # Change Log:
-- Now includes the decryption software :) ![decryptsoftware](https://i.top4top.io/p_1604d9ahl1.png)
+- Now includes the decryption software :) 
+
+
+![decryptsoftware](https://i.top4top.io/p_1604d9ahl1.png)
