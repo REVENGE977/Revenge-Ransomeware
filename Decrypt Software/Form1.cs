@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Windows.Forms;
 
@@ -20,7 +20,10 @@ namespace Decrypt_Software
                 {
                     try
                     {
+                        string filename = file.Split(new[] { ".REVENGE" }, StringSplitOptions.None)[0];
+
                         File.WriteAllBytes(file, decryptByteVigenere(File.ReadAllBytes(file), password.Text));
+                        File.Move(file, filename);
                     }catch(Exception)
                     {
                         MessageBox.Show("Error, are you sure this password is correct ?");
