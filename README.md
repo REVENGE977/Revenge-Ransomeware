@@ -19,7 +19,7 @@ const app = express();
 
 app.use(express.static("public"));
 app.use(bodyParser.json())
-
+//url.com/new
 app.post('/new', (req, res) => {
   var pcname = req.body.user;
   var password = req.body.pass;
