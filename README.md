@@ -7,7 +7,7 @@ a vigenere encrypt ransomeware by me :p, for education purpose.
 
 # NOTE
 i didnt try this, so try it on virtual machine to make sure it works perfectly, If you encounter any problems tell me in [issues](https://github.com/Bowlingtoolkit/Vigenere-Ransomeware/issues)
-also i created this only for education purpose .
+also i created this only for *education purpose* .
 
 
 # Express Node.js Server (To Get The Password For Decrypt) Example:
