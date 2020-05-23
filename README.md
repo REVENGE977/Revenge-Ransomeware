@@ -39,3 +39,6 @@ const listener = app.listen(3000, () => {
  
 ```
 - You can use glitch.com to create projects to get the decrypt password
+
+
+[Virustotal Scan Result](https://www.virustotal.com/gui/file/acf5c8c6b8658cf20e78a2a812db79dbd67ce65992dd0f5f6353962fec94a02c/detection)
