@@ -6,7 +6,7 @@ a vigenere encrypt ransomeware by me :p, for education purpose.
 - Vigenere
 
 # NOTE
-i didnt try this, so try it on virtual machine to make sure it works perfectly, If you encounter any problems tell me in [issues](https://github.com/Bowlingtoolkit/Vigenere-Ransomeware/issues)
+i didnt try this fully, so try it on virtual machine to make sure it works perfectly, If you encounter any problems tell me in [issues](https://github.com/Bowlingtoolkit/Vigenere-Ransomeware/issues)
 also i created this only for *education purpose* .
 
 
