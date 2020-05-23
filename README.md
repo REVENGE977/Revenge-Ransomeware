@@ -46,4 +46,4 @@ const listener = app.listen(3000, () => {
 
 
 # Change Log:
-- Now includes the decrypt software :)
+- Now includes the decryption software :)
