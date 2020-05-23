@@ -1,4 +1,4 @@
-# Vigenere Ransomeware
+# REVENGE RANSOMEWARE
 a vigenere encrypt ransomeware by me :p, for education purpose.
 **MAKE SURE TO STAR THE PROJECT :)**
 
