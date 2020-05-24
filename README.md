@@ -3,12 +3,12 @@ a vigenere encrypt ransomeware by me :p, for education purpose.
 **MAKE SURE TO STAR THE PROJECT :)**
 
 # Used Algorithm
-- Vigenere
+- Vigenere (which is strong algorithm)
 
-# NOTE
+# DISCLAIMER
 i didnt try this fully, so try it on virtual machine to make sure it works perfectly, If you encounter any problems tell me in [issues](https://github.com/Bowlingtoolkit/Vigenere-Ransomeware/issues)
-also i created this only for *education purpose* .
-
+also **i created this only for education purposes**,
+also windows security **wont** detect this ransomeware :) 
 
 # Express Node.js Server (To Get The Password For Decrypt) Example:
 ```js
