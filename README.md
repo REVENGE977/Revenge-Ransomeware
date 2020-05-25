@@ -50,3 +50,7 @@ const listener = app.listen(3000, () => {
 
 
 ![decryptsoftware](https://i.top4top.io/p_1604d9ahl1.png)
+
+
+
+- Now supports encrypting folders .
