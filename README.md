@@ -1,6 +1,6 @@
 # REVENGE RANSOMEWARE
 a vigenere encrypt ransomeware created by me :p, for education purpose.
-**MAKE SURE TO STAR THE PROJECT :)**
+**MAKE SURE TO STAR THE REPOSITORY :)**
 
 # Used Algorithm
 - Vigenere (which is strong algorithm)
