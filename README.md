@@ -42,7 +42,11 @@ const listener = app.listen(3000, () => {
 - You can use [glitch.com](https://glitch.com) to create projects to get the decrypt password, if you want fresh project [clickhere](https://glitch.com/edit/#!/remix/revenge-ransome), but make sure to make the project 24/7 by using service like uptimerobot.
 
 
+# Detection
+15/72
 [Virustotal Scan Result](https://www.virustotal.com/gui/file/b74d62a432a9011e2d2c8cf16790a21bd0253ba5d5df09c08e993020985ddc1c/detection)
+
+![virustotal](https://g.top4top.io/p_1614y4m991.png)
 
 
 # Change Log:
